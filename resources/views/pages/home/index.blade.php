@@ -6,8 +6,8 @@
         <x-hero title="Halo, Saya Nusvara">
             <p>Saya membangun sebuah aplikasi web dan dapat membuat model prediksi sederhana yang akurat.</p>
             <div class="flex space-x-4 items-center mt-4">
-                <x-button route="{{ route('projects') }}" variant="solid" text="Project Saya"></x-button>
-                <x-button route="{{ route('contact') }}" variant="outline" text="Hubungi Saya"></x-button>
+                <x-button route="{{ route('projects.index') }}" variant="solid" text="Project Saya"></x-button>
+                <x-button route="{{ route('contact.index') }}" variant="outline" text="Hubungi Saya"></x-button>
             </div>
         </x-hero>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch py-6">
@@ -38,7 +38,7 @@
             </div>
         </x-section>
         <x-section section="projects" title="Beberapa projek saya">
-            <x-button route="{{ route('projects') }}" variant="outline" text="Lihat Semua"></x-button>
+            <x-button route="{{ route('projects.index') }}" variant="outline" text="Lihat Semua"></x-button>
             <div class="flex flex-row flex-wrap justify-center">
             </div>
         </x-section>

@@ -2,16 +2,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-                <h2 class="text-white text-xl font-bold mb-4">NusvaaPorto.</h2>
+                <h2 class="text-white text-xl font-bold mb-4">Nusvaa</h2>
                 <p class="text-sm leading-relaxed">
                     Selamat datang di web portofolio saya.
                 </p>
             </div>
             <div class="flex flex-col space-y-2">
                 <h3 class="text-white font-semibold mb-2">Tautan Utama</h3>
-                <a href="{{ route('home') }}" class="hover:text-blue-500">> Beranda</a>
-                <a href="{{ route('about') }}" class="hover:text-blue-500">> Projek Saya</a>
-                <a href="{{ route('blog') }}" class="hover:text-blue-500">> Blog Saya</a>
+                <a href="{{ route('home') }}" class="hover:text-blue-500">[ Beranda ]</a>
+                <a href="{{ route('about') }}" class="hover:text-blue-500">[ Projek Saya ]</a>
+                <a href="{{ route('blog.index') }}" class="hover:text-blue-500">[ Blog Saya ]</a>
             </div>
             <div>
                 <h3 class="text-white font-semibold mb-2">Kontak</h3>

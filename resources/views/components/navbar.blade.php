@@ -3,15 +3,15 @@
         <div class="flex justify-between h-16">
             <div class="flex items-center">
                 <a href="/home" class="text-2xl font-bold text-blue-900">
-                    Nusvaa<span class="text-white">Porto.</span>
+                    Nusvaa<span class="text-white">ra.</span>
                 </a>
             </div>
             <div class="hidden md:flex items-center space-x-8 text-white">
                 <a href="{{ route('home') }}" class="hover:text-blue-600 transition">Beranda</a>
                 <a href="{{ route('about') }}" class="hover:text-blue-600 transition">Tentang</a>
-                <a href="{{ route('projects')}}" class="hover:text-blue-600 transition">Projek Saya</a>
-                <a href="{{ route('blog') }}" class="hover:text-blue-600 transition">Blog</a>
-                <x-button route="{{ route('contact') }}" variant="solid" text="Kontak Saya"></x-button>
+                <a href="{{ route('projects.index')}}" class="hover:text-blue-600 transition">Projek Saya</a>
+                <a href="{{ route('blog.index') }}" class="hover:text-blue-600 transition">Blog</a>
+                <x-button route="{{ route('contact.index') }}" variant="solid" text="Kontak Saya"></x-button>
             </div>
         </div>
     </div>
