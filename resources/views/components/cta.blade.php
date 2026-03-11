@@ -6,7 +6,7 @@
             yang berhubungan dengan teknologi.
         </p>
         <div class="flex justify-center">
-            <x-button variant="solid" text="Hubungi Saya"></x-button>
+            <x-button route="{{ route('contact.index') }}" variant="solid" text="Hubungi Saya"></x-button>
         </div>
     </div>
 </section>

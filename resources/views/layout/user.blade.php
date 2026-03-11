@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#0d1117] font-mono">
+<html lang="en" class="bg-black font-mono">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Website Saya')</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@9/font/simple-icons.min.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased selection:bg-blue-500">
+<body class="antialiased selection:bg-black">
     <x-bg></x-bg>
 
     @include('components.navbar')

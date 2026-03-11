@@ -1,20 +1,20 @@
 @props([
-'route' => '',
+'route' => '#',
 'text' => '',
-'variant' => 'solid' // solid, outline
+'variant' => 'solid',
+'target' => '_self'
 ])
 
 @php
-switch ($variant) {
-case 'solid':
-$button = 'px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300 transition';
-break;
-case 'outline':
-$button = 'px-4 py-2 bg-[#0d1117] rounded-lg border-1 border-gray-500 hover:border-white transition';
-break;
-}
+$button = match($variant) {
+'solid' => 'px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300 transition',
+'outline' => 'px-4 py-2 bg-black rounded-lg border border-gray-500 hover:border-white transition',
+'ghost' => 'px-4 py-2 text-white underline decoration-transparent hover:decoration-white transition',
+'danger' => 'px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition',
+default => 'px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300 transition'
+};
 @endphp
 
-<a href="{{ $route }}" class="{{ $button }}">
-    {{ $text }}
+<a href="{{ $route }}" target="{{ $target }}" class="{{ $button }}">
+    {{ $slot->isEmpty() ? $text : $slot }}
 </a>

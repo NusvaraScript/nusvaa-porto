@@ -11,7 +11,7 @@
             </div>
         </x-hero>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch py-6">
-            <div class="relative">
+            <div class="relative flex items-center justify-center">
                 <img src="{{ asset('images/175510726.jpg') }}" alt="Nusvara"
                     class="w-auto max-h-96 object-cover rounded-3xl">
             </div>
@@ -29,12 +29,22 @@
             </x-section>
         </div>
         <x-section class="text-center" section="skills" title="Tech yang saya kuasasi"
-            description="Tools dan teknolosi yang saya gunakan pada project saya.">
+            description="Tools dan teknologi yang saya gunakan pada project saya.">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <x-card logo="fab fa-js" title="JavaScript" description="Bahasa Pemrograman."></x-card>
-                <x-card logo="fab fa-python" title="Python" description="Bahasa pemrograman."></x-card>
-                <x-card logo="fab fa-java" title="Java" description="Bahasa pemrograman."></x-card>
-                <x-card logo="fab fa-laravel" title="Laravel" description="Framework."></x-card>
+                <x-card logo="fab fa-js" title="JavaScript" description="Bahasa Pemrograman." level="Newbie"></x-card>
+                <x-card logo="fab fa-python" title="Python" description="Bahasa pemrograman."
+                    level="Intermediate"></x-card>
+                <x-card logo="fab fa-java" title="Java" description="Bahasa pemrograman." level="Intermediate"></x-card>
+                <x-card logo="fab fa-laravel" title="Laravel" description="Framework Backend."
+                    level="Intermediate"></x-card>
+                <x-card logo="fab fa-php" title="PHP" description="Bahasa pemrograman." level="Intermediate"></x-card>
+                <x-card logo="si si-tailwindcss" title="Tailwind" description="Framework Frontend."
+                    level="Newbie"></x-card>
+                <x-card logo="fab fa-bootstrap" title="Bootstrap" description="Framework Frontend."
+                    level="Intermediate"></x-card>
+                <x-card logo="si si-mysql" title="MySQL" description="Database." level="Intermediate"></x-card>
+                <x-card logo="si si-sqlite" title="SQLite" description="Database." level="Intermediate"></x-card>
+
             </div>
         </x-section>
         <x-section section="projects" title="Beberapa projek saya">
