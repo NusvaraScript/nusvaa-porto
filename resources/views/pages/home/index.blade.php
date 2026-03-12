@@ -10,26 +10,19 @@
                 <x-button route="{{ route('contact.index') }}" variant="outline" text="Hubungi Saya"></x-button>
             </div>
         </x-hero>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch py-6 border-t border-white/10">
             <div class="relative flex items-center justify-center">
                 <img src="{{ asset('images/175510726.jpg') }}" alt="Nusvara"
                     class="w-auto max-h-96 object-cover rounded-3xl">
             </div>
             <x-section section="About Me" title="Saya sangat tertarik dengan perkembangan teknologi"
                 description="Saya adalah seorang programmer yang mengulik dalam bidang web developer dan juga pada bidang machine learning. Nama asli saya adalah Yusuf Usman, tapi juga sering dikenal dengan nama Nusvara. Saya adalah developer yang bertempat tinggal di Indonesia."
-                description2="Diluar bidang teknologi saya memiliki hobi catur, dan kadang kadang juga mencoba gambar random.">
-                <div class="flex flex-wrap gap-4 items-center">
-                    <x-button variant="outline" text="PHP"></x-button>
-                    <x-button variant='outline' text='Python'></x-button>
-                    <x-button variant="outline" text="Java"></x-button>
-                    <x-button variant="outline" text="JavaScript"></x-button>
-                    <x-button variant="outline" text="MySQL"></x-button>
-                    <x-button variant="outline" text="SQLite"></x-button>
-                </div>
+                description2="Diluar bidang teknologi saya memiliki hobi catur, dan kadang kadang juga mencoba gambar random."
+                :border="false">
             </x-section>
         </div>
-        <x-section class="text-center" section="skills" title="Tech yang saya kuasasi"
-            description="Tools dan teknologi yang saya gunakan pada project saya.">
+        <x-section class="text-center" section="skills" title="Tech yang saya kuasai"
+            description="Tools dan teknologi yang saya gunakan pada project saya." :border=false>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <x-card logo="fab fa-js" title="JavaScript" description="Bahasa Pemrograman." level="Newbie"></x-card>
                 <x-card logo="fab fa-python" title="Python" description="Bahasa pemrograman."
