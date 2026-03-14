@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Website Saya')</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@9/font/simple-icons.min.css">
+    <!-- Devicons — untuk logo tech stack -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -14,7 +14,7 @@
     <x-bg></x-bg>
 
     @include('components.navbar')
-    <main class="flex flex-col md:flex-row gap-6">
+    <main class="flex flex-col md:flex-row gap-6 relative z-10">
         @if (Route::is('blog') || Route::is('projects'))
         @include('components.sidebar')
         @endif
@@ -25,12 +25,16 @@
             @else
             <div class="flex flex-col items-center justify-center min-h-screen text-center px-6 ">
                 <h1 class="text-3xl font-bold text-white mb-2">Work in Progress</h1>
-                <p class="text-gray-400 text-sm">Halaman ini lagi dalam pengerjaan. Nantikan updatenya!</p>
+                <p class="text-gray-400 text-sm">This page is still being work on, stay tuned!</p>
             </div>
             @endif
         </div>
     </main>
     @include('components.footer')
+
+    <!-- Lucide / Heroicons — untuk UI icons (jauh lebih ringan dari Font Awesome) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 
 </html>

@@ -7,11 +7,11 @@
                 </a>
             </div>
             <div class="hidden md:flex items-center space-x-8 text-white">
-                <a href="{{ route('home') }}" class="hover:text-blue-600 transition">Beranda</a>
-                <a href="{{ route('about') }}" class="hover:text-blue-600 transition">Tentang</a>
-                <a href="{{ route('projects.index')}}" class="hover:text-blue-600 transition">Projek Saya</a>
+                <a href="{{ route('home') }}" class="hover:text-blue-600 transition">Home</a>
+                <a href="{{ route('about') }}" class="hover:text-blue-600 transition">About</a>
+                <a href="{{ route('projects.index')}}" class="hover:text-blue-600 transition">My Projects</a>
                 <a href="{{ route('blog.index') }}" class="hover:text-blue-600 transition">Blog</a>
-                <x-button route="{{ route('contact.index') }}" variant="solid" text="Kontak Saya"></x-button>
+                <x-button route="{{ route('contact.index') }}" variant="solid" text="Contact Me"></x-button>
             </div>
         </div>
     </div>

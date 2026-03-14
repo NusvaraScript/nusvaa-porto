@@ -9,3 +9,18 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@keyframes drift1 {
+    0%, 100% { transform: translate(0px, 0px); }
+    33%       { transform: translate(30px, -20px); }
+    66%       { transform: translate(-20px, 15px); }
+}
+@keyframes drift2 {
+    0%, 100% { transform: translate(0px, 0px); }
+    33%       { transform: translate(-25px, 20px); }
+    66%       { transform: translate(20px, -15px); }
+}
+@keyframes gridMove {
+    0%   { background-position: 0px 0px; }
+    100% { background-position: 60px 60px; }
+}
