@@ -9,10 +9,10 @@
 
             {{-- Desktop menu --}}
             <div class="hidden md:flex items-center space-x-8 text-white">
-                <a href="{{ route('home') }}" class="text-blue-500 hover:underline">[Home]</a>
-                <a href="{{ route('about') }}" class="text-blue-500 hover:underline">[About]</a>
-                <a href="{{ route('projects.index') }}" class="text-blue-500 hover:underline">[Projects]</a>
-                <a href="{{ route('blog.index') }}" class="text-blue-500 hover:underline">[Blog]</a>
+                <x-button route="{{ route('home') }}" variant="" text="[Home]"></x-button>
+                <x-button route="{{ route('about') }}" variant="" text="[About]"></x-button>
+                <x-button route="{{ route('projects.index') }}" variant="" text="[Projects]"></x-button>
+                <x-button route="{{ route('blog.index') }}" variant="" text="[Blog]"></x-button>
                 <x-button route="{{ route('contact.index') }}" variant="solid" text="Contact Me"></x-button>
             </div>
 

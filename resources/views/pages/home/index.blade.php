@@ -49,8 +49,9 @@
                     url="https://nusvarascript.github.io/project-nusaman/website/"
                     source="https://github.com/NusvaraScript/project-nusaman"></x-card>
             </div>
-            <p class="text-md md:text-lg text-gray-400 mt-6 text-center">See more on <a
-                    href="{{ route('projects.index') }}" class="text-blue-500 hover:underline">[Projects]</a>.</p>
+            <p class="text-md md:text-lg text-gray-400 mt-6 text-center">See more on
+                <x-button route="{{ route('projects.index') }}" variant="" text="[Projects]"></x-button>
+            </p>
         </x-section>
 
         <x-cta></x-cta>

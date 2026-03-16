@@ -36,14 +36,14 @@
             <div class="flex gap-12 md:justify-end">
                 <div class="flex flex-col space-y-2">
                     <h3 class="text-white font-semibold mb-2">Personal</h3>
-                    <a href="{{ route('home') }}" class="text-blue-500 hover:underline">[Home]</a>
-                    <a href="{{ route('about') }}" class="text-blue-500 hover:underline">[About Me]</a>
-                    <a href="{{ route('blog.index') }}" class="text-blue-500 hover:underline">[My Blog]</a>
+                    <x-button route="{{ route('home') }}" variant="" text="[Home]"></x-button>
+                    <x-button route="{{ route('about') }}" variant="" text="[About Me]"></x-button>
+                    <x-button route="{{ route('blog.index') }}" variant="" text="[My Blog]"></x-button>
                 </div>
                 <div class="flex flex-col space-y-2">
                     <h3 class="text-white font-semibold mb-2">Explore</h3>
-                    <a href="{{ route('projects.index') }}" class="text-blue-500 hover:underline">[My Projects]</a>
-                    <a href="{{ route('contact.index') }}" class="text-blue-500 hover:underline">[Contact Me]</a>
+                    <x-button route="{{ route('projects.index') }}" variant="" text="[My Projects]"></x-button>
+                    <x-button route="{{ route('contact.index') }}" variant="" text="[My Contact]"></x-button>
                 </div>
             </div>
         </div>
