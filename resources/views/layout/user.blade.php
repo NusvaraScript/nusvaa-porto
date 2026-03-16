@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Nusvaa">
+    <meta property="og:description" content="Review My Website Please">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Website Saya')</title>
     <!-- Devicons — untuk logo tech stack -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
