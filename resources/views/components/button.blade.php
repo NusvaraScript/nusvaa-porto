@@ -16,6 +16,6 @@ default => 'leading-relaxed text-blue-500 hover:underline'
 };
 @endphp
 
-<a href="{{ $route }}" target="{{ $target }}" class="{{ $button }} {{ $class }}">
+<a href="{{ $route }}" target="{{ $target }}" class="text-sm md:text-base {{ $button }} {{ $class }}">
     {{ $slot->isEmpty() ? $text : $slot }}
 </a>

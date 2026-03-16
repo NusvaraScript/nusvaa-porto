@@ -9,7 +9,7 @@
 'border' => true
 ])
 <section
-    class="{{ $border ? 'border-t border-white/10' : '' }} {{ $image ? 'grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch' : '' }} py-8 px-6">
+    class="{{ $border ? 'border-t border-white/10' : '' }} {{ $image ? 'grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch' : '' }} py-8 px-2">
     @if ($image && !$reverse)
     <div class="relative flex items-center justify-center">
         <img src="{{ asset($image) }}" alt="{{ $title }}" class="w-auto max-h-80 object-cover rounded-3xl">
