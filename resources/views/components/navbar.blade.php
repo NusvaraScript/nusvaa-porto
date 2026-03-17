@@ -13,7 +13,7 @@
                 <x-button route="{{ route('about') }}" variant="" text="[About]"></x-button>
                 <x-button route="{{ route('projects.index') }}" variant="" text="[Projects]"></x-button>
                 <x-button route="{{ route('blog.index') }}" variant="" text="[Blog]"></x-button>
-                <x-button route="{{ route('contact.index') }}" variant="solid" text="Contact Me"></x-button>
+                <x-button route="{{ route('contact.index') }}" variant="solid" text="[Contact Me]"></x-button>
             </div>
 
             {{-- Hamburger button (mobile only) --}}
