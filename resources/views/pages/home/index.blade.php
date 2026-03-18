@@ -22,7 +22,7 @@
         </x-section>
         <x-section class="text-center" section="Skills" title="Tech I work with"
             description="Tool and technologies I use across my projects.">
-            <div class="grid grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-4">
+            <div class="pt-3 grid grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-4">
                 <x-card logo="devicon-html5-plain" title="HTML" description="Markup language."
                     level="Advanced"></x-card>
                 <x-card logo="devicon-css3-plain" title="CSS" description="Styling language."
