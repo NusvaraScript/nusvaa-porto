@@ -20,9 +20,20 @@
             playing chess, taking random pictures and occasionally try my hand at random sketches.</p>
     </x-section>
     <x-chatbox></x-chatbox>
+    <x-section section="Expectations" title="What I Can Do For You">
+        <div class="pt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <x-card logo="devicon-laravel-plain" title="Laravel Developer"
+                description="Can build a web application from zero to deployment."></x-card>
+            <x-card logo="devicon-python-plain" title="Python / Machine Learning"
+                description="Can build a simple machine leaarning model for businesses."></x-card>
+        </div>
+        <p class="text-md md:text-lg text-gray-400 mt-6 text-center">Wanna know more? You can read more about me here
+            <x-button route="{{ route('about') }}" variant="" text="[About]"></x-button>
+        </p>
+    </x-section>
     <x-section class="text-center" section="Skills <" title="Tech I work with"
         description="Tool and technologies I use across my projects.">
-        <div class="pt-3 grid grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-4">
+        <div class="pt-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <x-card logo="devicon-html5-plain" title="HTML" description="Markup language." level="Advanced"></x-card>
             <x-card logo="devicon-css3-plain" title="CSS" description="Styling language." level="Intermediate"></x-card>
             <x-card logo="devicon-javascript-plain" title="JavaScript" description="Programming language."

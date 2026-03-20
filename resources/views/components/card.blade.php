@@ -24,12 +24,16 @@ transition-all text-white overflow-hidden">
     {{-- Basic Card --}}
     @if ($type == 'basic')
     <div class="p-6 flex flex-col flex-1 bg-black">
+        @if ($logo)
         <i class="{{ $logo }}" style="font-size: 50px"></i>
+        @endif
         <h1 class="text-lg mt-4 font-bold">{{ $title }}</h1>
         <p class="text-sm mt-2">{{ $description }}</p>
         <div class="flex items-center gap-2 mt-auto pt-4 border-t border-gray-700">
+            @if ($level)
             <span class="w-2 h-2 rounded-full {{ $dotColor }}"></span>
             <span class="text-xs text-gray-400">{{ $level }}</span>
+            @endif
         </div>
     </div>
     {{-- Detailed Card --}}
