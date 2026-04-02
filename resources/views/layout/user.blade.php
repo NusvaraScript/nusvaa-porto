@@ -148,6 +148,7 @@
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
+    @stack('js')
 </body>
 
 </html>

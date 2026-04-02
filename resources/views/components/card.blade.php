@@ -19,7 +19,7 @@ default => ''
 };
 @endphp
 
-<div class="rounded-lg border border-gray-500 hover:border-white hover:scale-102 active:scale-95
+<div class="border-2 border-white/10 hover:shadow-[6px_6px_0px_#fff] hover:border-white hover:scale-102 active:scale-95
 transition-all text-white overflow-hidden">
     {{-- Basic Card --}}
     @if ($type == 'basic')

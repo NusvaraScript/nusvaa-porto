@@ -1,4 +1,4 @@
-<footer class="bg-black border-t border-gray-200 text-white py-12 relative z-10">
+<footer class="bg-black border-t-2 border-gray-200 text-white py-12 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {{-- LEFT: Info + Contact --}}

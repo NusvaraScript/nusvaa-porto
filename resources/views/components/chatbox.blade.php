@@ -1,5 +1,5 @@
-<section class="border-t border-white/10 py-12 reveal">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-8 my-6 reveal">
+    <div class="">
         <div class="flex flex-col gap-10">
             {{-- Header --}}
             <div class="text-center">
@@ -12,7 +12,7 @@
             </div>
 
             {{-- Chat Card --}}
-            <div class="bg-black border border-gray-500 rounded-2xl overflow-hidden flex flex-col shadow-2xl">
+            <div class="bg-black border border-white overflow-hidden flex flex-col shadow-2xl">
 
                 {{-- Card Header --}}
                 <div class="flex items-center gap-3 px-5 py-4 border-b border-gray-800">
@@ -84,6 +84,7 @@
     </div>
 </section>
 
+@push('js')
 <script>
     (function () {
         // ── Config ───────────────────────────────────────────────
@@ -117,7 +118,7 @@
             SUGGESTIONS.forEach(s => {
                 const btn = document.createElement('button');
                 btn.textContent = s;
-                btn.className = 'text-xs text-black bg-white border border-black px-3 py-1.5 rounded-xl hover:scale-103 active:scale-95 transition-all';
+                btn.className = 'text-xs px-4 py-1.5 mx-1 bg-white text-black border-2 border-black hover:shadow-[5px_5px_0px_#fff] hover:scale-105 active: scale - 95 transition - all';
                 btn.addEventListener('click', () => sendMessage(s));
                 container.appendChild(btn);
             });
@@ -240,3 +241,4 @@
         }
     })();
 </script>
+@endpush

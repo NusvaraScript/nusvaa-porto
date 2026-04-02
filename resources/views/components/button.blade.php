@@ -8,9 +8,12 @@
 
 @php
 $button = match($variant) {
-'solid' => 'px-4 py-1.5 bg-white text-black rounded-lg hover:bg-gray-300 hover:scale-105 active:scale-95
+'solid' => 'px-4 py-1.5 bg-white text-black border-2 border-black hover:shadow-[5px_5px_0px_#fff] hover:scale-105
+active:scale-95
 transition-all',
-'outline' => 'px-4 py-1.5 bg-black rounded-lg border border-gray-500 hover:border-white hover:scale-105 active:scale-95
+'outline' => 'px-4 py-1.5 bg-black border-2 border-white/10 hover:border-white hover:shadow-[5px_5px_0px_#fff]
+hover:scale-105
+active:scale-95
 transition-all',
 'ghost' => 'px-4 py-1.5 text-white underline decoration-transparent hover:decoration-white hover:scale-105
 active:scale-95
