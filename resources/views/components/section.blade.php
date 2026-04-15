@@ -1,22 +1,22 @@
 @props([
-'section' => '',
-'image' => '',
-'title' => '',
-'description' => '',
-'class' => '',
-'reverse' => false,
-'border' => true
+    'section' => '',
+    'image' => '',
+    'title' => '',
+    'description' => '',
+    'class' => '',
+    'reverse' => false,
+    'border' => true
 ])
 
-<section class="border border-white py-8 my-6 reveal">
+<section class="border border-white py-8 my-12 reveal bg-black">
     <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 {{ $image ? 'grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch' : '' }}">
 
         @if ($image && !$reverse)
-        <div class="relative flex items-center justify-center">
-            <img src="{{ asset($image) }}" alt="{{ $title }}"
-                class="w-auto max-h-80 object-cover border-2 border-white/10">
-        </div>
+            <div class="relative flex items-center justify-center">
+                <img src="{{ asset($image) }}" alt="{{ $title }}"
+                    class="w-auto max-h-80 object-cover border-2 border-white/10">
+            </div>
         @endif
 
         <div class="md:col-span-2">
@@ -32,9 +32,9 @@
         </div>
 
         @if ($image && $reverse)
-        <div class="relative flex items-center justify-center">
-            <img src="{{ asset($image) }}" alt="{{ $title }}" class="w-auto max-h-80 object-cover rounded-3xl">
-        </div>
+            <div class="relative flex items-center justify-center">
+                <img src="{{ asset($image) }}" alt="{{ $title }}" class="w-auto max-h-80 object-cover rounded-3xl">
+            </div>
         @endif
 
     </div>

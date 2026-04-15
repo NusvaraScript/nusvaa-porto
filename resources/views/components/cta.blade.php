@@ -1,4 +1,4 @@
-<section class="reveal py-12">
+<section class="reveal my-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
         <div class="md:mr-4">
             <p class="text-xs md:text-sm text-blue-500 uppercase tracking-widest">

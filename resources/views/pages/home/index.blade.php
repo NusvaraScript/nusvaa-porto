@@ -9,7 +9,7 @@
             <x-button route="{{ route('contact.index') }}" variant="outline" text="[Contact Me]"></x-button>
         </div>
     </x-hero>
-    <x-section image="images/175510726.jpg" section="About Me"
+    <x-section image="{{ asset('images/175510726.jpg') }}" section="About Me"
         title="I'm deeply interested in the growth of technology">
         <p class="text-sm my-4 text-gray-300 leading-relaxed">My name is <span
                 class="font-bold text-white">Nusvaa</span>, also

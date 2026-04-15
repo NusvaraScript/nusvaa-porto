@@ -85,6 +85,7 @@
     </div>
 </div>
 
+@push('js')
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
@@ -106,3 +107,4 @@
         }
     }
 </script>
+@endpush

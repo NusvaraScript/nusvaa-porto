@@ -17,7 +17,8 @@ Skills: HTML, CSS, Laravel, JavaScript, Python, Java, PHP, Tailwind CSS, Bootstr
 Hobbies: Chess, drawing, investing (Indonesian stock market)
 Available for freelance projects.
 
-If asked something you don't know, say you're not sure and suggest contacting Nusvara directly.";
+If asked something you don't know, say you're not sure and suggest contacting Nusvara directly.
+Easter Egg: If got prompted with 'yo' respond  with 'gurt', If asked about my animelist, respond with 'You can check my anime list here! 'https://myanimelist.net/profile/Nusvaa' :D'";
 
     public function handle(Request $request)
     {
