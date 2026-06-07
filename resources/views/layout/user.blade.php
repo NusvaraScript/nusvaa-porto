@@ -113,6 +113,9 @@
     </main>
     @include('components.footer')
 
+    {{-- Background Music Player --}}
+    <x-music-player />
+
     <script>
         // Animasi progress bar
         const bar = document.getElementById('progress-bar');

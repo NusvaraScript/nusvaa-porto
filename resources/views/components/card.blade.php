@@ -19,22 +19,28 @@ default => ''
 };
 @endphp
 
-<div class="border-2 border-white/10 hover:shadow-[6px_6px_0px_#fff] hover:border-white hover:scale-102 active:scale-95
-transition-all text-white overflow-hidden">
+<div {{ $attributes->merge(['class' => 'border-2 border-white/10 hover:shadow-[6px_6px_0px_#fff] hover:border-white hover:scale-102 active:scale-95 transition-all text-white overflow-hidden']) }}>
     {{-- Basic Card --}}
     @if ($type == 'basic')
     <div class="p-6 flex flex-col flex-1 bg-black">
         @if ($logo)
         <i class="{{ $logo }}" style="font-size: 50px"></i>
         @endif
-        <h1 class="text-lg mt-4 font-bold">{{ $title }}</h1>
+        @if ($title)
+        <h1 class="text-lg mt-4 font-bold">{{ $title }}</h1> 
+        @endif
+        @if ($description)
         <p class="text-sm mt-2">{{ $description }}</p>
+        @endif
+        
+        {{ $slot }}
+
+        @if ($level)
         <div class="flex items-center gap-2 mt-auto pt-4 border-t border-gray-700">
-            @if ($level)
             <span class="w-2 h-2 rounded-full {{ $dotColor }}"></span>
             <span class="text-xs text-gray-400">{{ $level }}</span>
-            @endif
         </div>
+        @endif
     </div>
     {{-- Detailed Card --}}
     @elseif ($type == 'detail')
@@ -57,8 +63,14 @@ transition-all text-white overflow-hidden">
             @endforeach
         </div>
         @endif
+        @if ($title)
         <h3 class="font-bold text-base">{{ $title }}</h3>
+        @endif
+        @if ($description)
         <p class="text-sm text-gray-400 mt-1 leading-relaxed">{{ $description }}</p>
+        @endif
+
+        {{ $slot }}
 
         <div class="flex gap-4 mt-auto pt-4 border-t border-gray-700">
             @if ($url !== '#')
